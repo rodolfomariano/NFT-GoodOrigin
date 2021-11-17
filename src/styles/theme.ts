@@ -5,10 +5,13 @@ export default {
     text: '#969CB2',
     shape_light: '#FFFFFF',
     shape: '#FAFAFA',
-    background: '#41464B',
+    title: '#41464B',
 
     action: '#5636D3',
     action_light: 'rgba(86, 54, 211, .5)',
+
+    btn_blue: 'rgba(124, 92, 255, .6)',
+    btn_green: 'rgba(18, 164, 84, .6)',
 
     success: '#12A454',
     success_light: 'rgba(18, 164, 84, 0.5)',
