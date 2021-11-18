@@ -47,8 +47,6 @@ export const Steps = styled.View`
   flex-direction: row;
 `
 
-
-
 export const Step = styled.Text`
   width: 25%;
   height: 100%;
@@ -153,16 +151,31 @@ export const DocumentLabe = styled.Text`
 `
 
 export const DocumentContent = styled.View`
+  position: relative;
   width: 100%;
   padding: 12px 8px 32px 8px;
   background-color: #EEEDED;
+`
+
+export const DocImage = styled.Image`
+  width: 110px;
+  height: 80px;
+`
+export const DocName = styled.Text`
+  color: ${({ theme }) => theme.colors.btn_blue};
+`
+
+export const ClearDoc = styled(RectButton)`
+  position: absolute;
+  top: 10px;
+  right: 10px;
 `
 
 export const ExampleText = styled.Text`
   color: ${({ theme }) => theme.colors.title};
 `
 
-export const ButtonSelectDoc = styled.View`
+export const ButtonSelectDoc = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   margin-top: 24px;
@@ -172,11 +185,52 @@ export const ButtonTitle = styled.Text`
   color: ${({ theme }) => theme.colors.action};
 `
 
-export const Footer = styled.View`
-  width: 100%;
+export const ProductImage = styled.Image`
+  width: 110px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+`
 
+export const ClearPhoto = styled(RectButton)`
+  position: absolute;
+  top: 10px;
+  right: 10px;
 `
 
 export const SelectPhotoContainer = styled.View`
   margin-bottom: 24px;
 `
+
+export const StepContentFinish = styled.ScrollView`
+  flex: 1;
+  height: 400px;
+
+`
+
+export const ResumeContent = styled.View`
+
+`
+
+export const ResumeName = styled.Text`
+  font-size: ${RFValue(16)}px;
+  font-family: ${({ theme }) => theme.fonts.title_sec};
+  color: ${({ theme }) => theme.colors.title};
+  margin-top: 8px;
+`
+
+export const ResumeDescription = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.title_sec};
+  color: ${({ theme }) => theme.colors.btn_blue};
+`
+
+export const ProductImageResume = styled.Image`
+  width: 110px;
+  height: 40px;
+`
+
+export const Footer = styled.View`
+  width: 100%;
+
+`
+
