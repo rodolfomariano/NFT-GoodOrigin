@@ -16,8 +16,9 @@ import {
 } from '@expo-google-fonts/roboto'
 
 import theme from './src/styles/theme'
-import { TokensList } from './src/screens/TokensList';
-import { NewToken } from './src/screens/NewToken';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { AppRoutes } from './src/routes/app.routes';
 
 export default function App() {
 
@@ -35,9 +36,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme} >
-      {/* <Authentication /> */}
-      {/* <TokensList /> */}
-      <NewToken />
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
     </ThemeProvider>
   );
 }

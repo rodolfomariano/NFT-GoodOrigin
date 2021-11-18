@@ -6,6 +6,7 @@ export default {
     shape_light: '#FFFFFF',
     shape: '#FAFAFA',
     title: '#41464B',
+    title_light: 'rgba(65, 70, 75, .7)',
 
     action: '#5636D3',
     action_light: 'rgba(86, 54, 211, .5)',
